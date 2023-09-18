@@ -1,8 +1,8 @@
 # Product inventory app
 
-Goal of the assignment is to create a minimalistic product inventory system.
-This repository contains a stub of the application with the same tech stack
-that our real application is built with:
+A minimalistic product inventory system to manage product inventory.It allows users to create new products, list available products,view their stocks and prices. 
+
+## Technologies used
 
 * [Docker](https://www.docker.com/)
 * [Postgres SQL database](https://www.postgresql.org/)
@@ -12,17 +12,14 @@ that our real application is built with:
 * [Apollo GraphQL client](https://www.apollographql.com/docs/react/)
 * [Ant Design UI library](https://ant.design/)
 
-## Tasks
 
-Please complete all of the following:
-
-1. List available products, their stock and prices
-1. Calculate total value of all products in the inventory
-1. Create a form to add new product to inventory
-
-## Run the application
+## Getting Started
 
 ```sh
+# Clone this repo to your local machine
+git clone <repository-url>
+cd product-inventory-app-frontend
+
 # install dependencies
 npm i
 
@@ -33,11 +30,6 @@ npm start
 docker compose up
 ```
 
+The application will be accessible at http://localhost:3000/, and the Hasura GraphQL console can be accessed at http://localhost:8080/console.
 
-Then open http://localhost:3000/ in your browser.
 
-Hasura serves a grapql endpoint with schema auto generated from Postgres schema. It is available at http://localhost:8080/v1/graphql. Frontend should interact with the database only through this endpoint.
-
-Hasura console is available at http://localhost:8080/console.
-
-To add migrations for new database tables, you would have to run Hasura console locally using [Hasura CLI](https://hasura.io/docs/latest/hasura-cli/overview/).
